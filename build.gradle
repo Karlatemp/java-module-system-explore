@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api 'io.github.karlatemp:unsafe-accessor:1.6.2'
+    api 'org.ow2.asm:asm-util:9.2'
+    api 'org.ow2.asm:asm-tree:9.2'
+    api 'org.ow2.asm:asm-commons:9.2'
+}
+/*
+
+if (JavaVersion.current() < JavaVersion.JAVA_17) {
+    throw new IllegalStateException("Requre JDK 17")
+}
+*/
